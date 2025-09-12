@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.001rem;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: start;
+    background-color: hsl(0, 5%, 92%);
+}
+
+.general-container {
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blue-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    background-color: hsl(256, 71%, 50%);
+    padding: 1.8rem 1.2rem 1.2rem 1.2rem;
+}
+
+.proj-icon-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proj-icon-container h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.proj-icon-container i {
+    color:  hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.proj-icon-container i:hover {
+    color: hsl(64, 56%, 58%);
+}
+
+.para-container {
+    width: 100%;
+    height: auto;
+}
+
+.para-container p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.8rem;
+    padding: 1.6rem 1.2rem 1.2rem 1.2rem;
+}
+
+.first-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    /* margin-bottom: 2rem; */
+    border-bottom: 1px solid hsl(0, 0%, 89%);
+}
+
+.first-input-label-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.proj-name-container, .descrip-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.37rem;
+}
+
+.proj-name-container label, .descrip-container label, .members-team-cont h1, .public-access-cont label {
+    color: hsl(0, 0%, 50%);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: -0.031rem;
+}
+
+.proj-name-container input {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid hsl(0, 0%, 89%);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.5rem;
+    outline: none;
+}
+
+.proj-name-container input:hover, .descrip-container textarea:hover {
+    background-color: hsla(0, 0%, 96%, 0.301);
+    border: 1.5px solid hsl(0, 0%, 95%);
+}
+
+.proj-name-container input:focus, .descrip-container textarea:focus {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 50%);
+    border: 1.5px solid hsla(256, 71%, 50%, 0.32);
+}
+
+.descrip-container textarea {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid hsl(0, 0%, 89%);
+    border-radius: 0.3rem;
+    padding: 1.6rem 0.5rem;
+    outline: none;
+}
+
+.team-members-img-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.members-team-cont {
+    width: fit-content;
+    height: auto;
+}
+
+/* (members-team-cont h1) is at (proj-name-container label) above ^^ */
+
+.images-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.avatar-cont {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1000000000000000000rem;
+    cursor: pointer;
+    border: 1.5px solid hsl(0, 0%, 89%);
+}
+
+.avatar-cont img:hover {
+    opacity: 0.4;
+    background-color: hsla(256, 71%, 50%, 0.893);
+}
+
+.plus-icon-cont {
+    width: fit-content;
+    height: auto;
+    border: 1.5px dashed hsl(0, 0%, 89%);
+    border-radius: 1000000000000000000rem;
+    padding: 0.1rem 0.3rem;
+    cursor: pointer;
+}
+
+.plus-icon-cont:hover {
+    border: 1.5px dashed hsla(256, 71%, 50%, 0.32);
+}
+
+.plus-icon-cont p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 75%);
+    cursor: pointer;
+}
+
+.plus-icon-cont p:hover {
+    color: hsla(256, 71%, 50%, 0.717);
+}
+
+.privacy-btns-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.privacy-cont {
+    width: fit-content;
+    height: auto;
+}
+
+.privacy-cont h1 {
+    color: hsl(0, 0%, 50%);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: -0.031rem;
+}
+
+.radio-btns-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.radio-one-cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.2rem;
+}
+
+.public-access-cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.3rem;
+}
+
+.public-access-cont input {
+    accent-color: hsl(256, 71%, 50%);
+    cursor: pointer;
+}
+
+.public-access-cont label {
+    cursor: pointer;
+}
+/* (public-access-cont label) also is at (proj-name-container label) above ^^ */
+
+.radio-one-cont p {
+    color: hsla(0, 0%, 50%, 0.562);
+    font-size: 0.76rem;
+    font-weight: 500;
+    margin-left: 1.1rem;
+}
+
+.second-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.8rem;
+    margin-bottom: 3rem;
+    /* border-bottom: 1px solid hsl(0, 0%, 89%); */
+}
+
+.copy-link-cont {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.4rem;
+    cursor: pointer;
+}
+
+.copy-link-cont i {
+    color: hsla(0, 0%, 50%, 0.562);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.copy-link-cont p {
+    color: hsla(0, 0%, 50%, 0.628);
+    font-size: 0.76rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.copy-link-cont p:hover, .copy-link-cont i:hover {
+    color: hsla(256, 71%, 50%, 0.744);
+}
+
+.btns-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 0.8rem;
+    border-top: 1px solid hsl(0, 0%, 89%);
+    padding: 0.9rem 1.2rem;
+}
+
+.cancel-btn {
+    width: fit-content;
+    height: auto;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 89%);
+    border-radius: 0.3rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0.3rem 0.6rem;
+    color: hsl(0, 0%, 50%);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: -0.031rem;
+}
+
+.cancel-btn:hover {
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(256, 71%, 50%, 0.744);
+}
+
+.save-btn {
+    width: fit-content;
+    height: auto;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 50%);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    background-color: hsla(256, 71%, 50%, 0.744);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: -0.031rem;
+}
+
+.save-btn:hover {
+    background-color: hsla(256, 76%, 43%, 0.744);
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="general-container">
+        <div class="blue-container">
+            <div class="proj-icon-container">
+                <h1>New Project</h1>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="para-container">
+                <p>Get started by filling in the information below to create your new project.</p>
+            </div>
+        </div>
+        <form>
+            <div class="content-container">
+                <div class="first-container">
+                    <div class="first-input-label-container">
+                        <div class="proj-name-container">
+                            <label for="project-name">Project name</label>
+                            <input type="text" id="project-name" name="project-name">
+                        </div>
+                        <div class="descrip-container">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="team-members-img-container">
+                        <div class="members-team-cont">
+                            <h1>Team Members</h1>
+                        </div>
+                        <div class="images-container">
+                            <div class="avatar-cont">
+                                <img src="./Assets/Abasi.png" alt="Our Tech Sis, Abasi">
+                            </div>
+                            <div class="avatar-cont">
+                                <img src="./Assets/Ngozi.png" alt="Our HR, Ngozi">
+                            </div>
+                            <div class="avatar-cont">
+                                <img src="./Assets/Sandra.png" alt="Our Alabi Sandra of Dev and Design">
+                            </div>
+                            <div class="avatar-cont">
+                                <img src="./Assets/Abasi.png" alt="Our Tech Sis, Abasi">
+                            </div>
+                            <div class="avatar-cont">
+                                <img src="./Assets/Ngozi.png" alt="Our Tech Sis, Abasi">
+                            </div>
+                            <div class="plus-icon-cont">
+                                <p>+</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="privacy-btns-container">
+                        <div class="privacy-cont">
+                            <h1>Privacy</h1>
+                        </div>
+
+                        <div class="radio-btns-container">
+                            <div class="radio-one-cont">
+                                <div class="public-access-cont">
+                                    <input type="radio" id="public" name="privacy" value="public-access">
+                                    <label for="public">Public Access</label>
+                                </div>
+                                <p>Everyone with the link will see this project.</p>
+                            </div>
+
+                            <div class="radio-one-cont">
+                                <div class="public-access-cont">
+                                    <input type="radio" id="private" name="privacy" value="private-members">
+                                    <label for="private">Private to project members</label>
+                                </div>
+                                <p>Only members of this project would be able to access.</p>
+                            </div>
+
+                            <div class="radio-one-cont">
+                                <div class="public-access-cont">
+                                    <input type="radio" id="only-you" name="privacy" value="private-you">
+                                    <label for="only-you">Private to you</label>
+                                </div>
+                                <p>You are the only one abe to access this project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="second-container">
+                    <div class="copy-link-cont">
+                        <i class="fa-solid fa-link"></i>
+                        <p>Copy link</p>
+                    </div>
+                    <div class="copy-link-cont">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Learn more about sharing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btns-container">
+                <button class="cancel-btn">Cancel</button>
+                <button class="save-btn">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
