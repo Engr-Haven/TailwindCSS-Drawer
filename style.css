@@ -372,13 +372,14 @@ form {
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: -0.031rem;
+    cursor: pointer;
 }
 
 .cancel-btn:hover {
     border: none;
     outline: none;
-    color: hsl(0, 0%, 100%);
-    background-color: hsla(256, 71%, 50%, 0.744);
+    /* color: hsl(0, 0%, 100%); */
+    background-color: hsl(0, 0%, 93%);
 }
 
 .save-btn {
@@ -388,13 +389,14 @@ form {
     border: 1px solid hsl(0, 0%, 50%);
     border-radius: 0.3rem;
     padding: 0.3rem 0.6rem;
-    background-color: hsla(256, 71%, 50%, 0.744);
+    background-color: hsl(256, 71%, 50%);
     color: hsl(0, 0%, 100%);
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: -0.031rem;
+    cursor: pointer;
 }
 
 .save-btn:hover {
-    background-color: hsla(256, 76%, 43%, 0.744);
+    background-color: hsla(256, 76%, 43%, 0.858);
 }
