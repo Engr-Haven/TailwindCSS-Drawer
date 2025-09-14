@@ -320,6 +320,11 @@ form {
     /* border-bottom: 1px solid hsl(0, 0%, 89%); */
 }
 
+.second-container a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .copy-link-cont {
     width: fit-content;
     height: auto;
@@ -344,7 +349,7 @@ form {
     cursor: pointer;
 }
 
-.copy-link-cont p:hover, .copy-link-cont i:hover {
+.copy-link-cont:hover i, .copy-link-cont:hover p {
     color: hsla(256, 71%, 50%, 0.744);
 }
 
